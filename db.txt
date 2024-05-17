@@ -1,0 +1,15 @@
+DROP DATABASE IF EXISTS bd_api_employees2;
+CREATE DATABASE bd_api_employees2 CHARSET utf8mb4;
+USE bd_api_employees2;
+
+CREATE TABLE employees2 (
+    id INT(11) NOT NULL AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    age INT(11) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+INSERT INTO employees2(name, age) VALUES('Jake', 21);
+INSERT INTO employees2(name, age) VALUES('Mathew', 24);
+INSERT INTO employees2(name, age) VALUES('Marcos', 25);
+commit;
